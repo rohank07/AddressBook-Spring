@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>AddressBook</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+<h1>Results</h1>
+
+<!--<p th: each="ab:  ${addressBook} " />-->
+<p th:text = "'AddressBook ID'  + ${addressBook.id}"></p>
+<p th:text = "'BuddyInfo'  + ${addressBook.ToString()}"></p>
+
+</body>
+</html>
