@@ -29,7 +29,7 @@ public class DefaultController {
         addressbook.addBuddy(buddy);
         buddyRepo.save(buddy);
     }
-//
+//get
     @PostMapping("/addBook")
     @ResponseStatus(value = HttpStatus.OK)
     public void addAddressBook(){
