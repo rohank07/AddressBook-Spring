@@ -50,6 +50,7 @@ public class TestingWebApplicationTest {
                 .andExpect(status().isOk());
         Assert.assertNotEquals(this.addressBookRepository.count(), 0);
     }
+
 //    @Test
 //    public void createBuddy() throws Exception{
 //        String url = "/add";
