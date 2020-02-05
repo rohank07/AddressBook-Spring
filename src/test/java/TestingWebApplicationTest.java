@@ -49,18 +49,18 @@ public class TestingWebApplicationTest {
                 .andExpect(status().isOk());
         Assert.assertNotEquals(this.addressBookRepository.count(), 0);
     }
-    @Test
-    public void createBuddy() throws Exception{
-        String url = "/add";
-
-        mockMvc.perform(post(url)
-                .contentType(MediaType.APPLICATION_JSON).content("{\"name\": \"Abu\" ," +
-                "\"number\": \"1234\"}"))
-                .andDo(print())
-                .andExpect(status().isOk())
-                .andReturn();
-        Assert.assertNotNull (this.buddyRepository.findByName("Abu"));
-    }
+//    @Test
+//    public void createBuddy() throws Exception{
+//        String url = "/add";
+//
+//        mockMvc.perform(post(url)
+//                .contentType(MediaType.APPLICATION_JSON).content("{\"name\": \"Abu\" ," +
+//                "\"number\": \"1234\"}"))
+//                .andDo(print())
+//                .andExpect(status().isOk())
+//                .andReturn();
+//        Assert.assertNotNull (this.buddyRepository.findByName("Abu"));
+//    }
 
 
 }
