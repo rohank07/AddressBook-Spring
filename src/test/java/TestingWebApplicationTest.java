@@ -26,6 +26,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 import accessingdatajpa.AddressBookRepository;
 import accessingdatajpa.BuddyRepository;
+import javafx.*;
 
 @SpringBootTest(classes = AccessingDataJpaApplication.class)
 @AutoConfigureMockMvc
