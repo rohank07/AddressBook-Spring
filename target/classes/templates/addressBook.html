@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>AddressBook</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+<h1>Addressbook</h1>
+
+<table>
+    <tr>
+        <th>NAME </th>
+        <th>Phone Number</th>
+    </tr>
+    <tr th:each="buddy : ${addressBook.buddyInfos}">
+        <td th:text="${buddy.name}"></td>
+        <td th:text="${buddy.phoneNum}"></td>
+    </tr>
+</table>
+
+<!--<p th:text = "'AddressBook ID'  + ${addressBook.id}"></p>-->
+<!--<p th:text = "'BuddyInfo'  + ${addressBook.ToString()}"></p>-->
+
+
+</body>
+</html>
