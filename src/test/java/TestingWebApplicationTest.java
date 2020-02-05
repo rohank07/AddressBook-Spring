@@ -1,6 +1,5 @@
 import accessingdatajpa.AccessingDataJpaApplication;
 import accessingdatajpa.DefaultController;
-import javafx.application.Application;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
