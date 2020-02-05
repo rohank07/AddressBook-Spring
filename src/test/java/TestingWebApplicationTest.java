@@ -15,9 +15,6 @@ import org.springframework.test.web.servlet.ResultActions;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultHandlers;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
-import org.thymeleaf.spring5.expression.Mvc;
-import static org.junit.Assert.*;
-import java.nio.charset.Charset;
 
 import static org.hamcrest.collection.IsCollectionWithSize.hasSize;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
@@ -26,7 +23,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 import accessingdatajpa.AddressBookRepository;
 import accessingdatajpa.BuddyRepository;
-import javafx.*;
+
 
 @SpringBootTest(classes = AccessingDataJpaApplication.class)
 @AutoConfigureMockMvc
@@ -50,7 +47,7 @@ public class TestingWebApplicationTest {
                 .andExpect(status().isOk());
         Assert.assertNotEquals(this.addressBookRepository.count(), 0);
     }
-
+//
 //    @Test
 //    public void createBuddy() throws Exception{
 //        String url = "/add";

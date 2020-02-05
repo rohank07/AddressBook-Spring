@@ -13,10 +13,8 @@ import org.springframework.web.bind.annotation.*;
 @Controller
 public class DefaultController {
 
-
     private AddressBookRepository addressRepo;
     private BuddyRepository buddyRepo;
-
     @Autowired
     public DefaultController(AddressBookRepository addressRepo , BuddyRepository buddyRepo){
         this.addressRepo = addressRepo;
