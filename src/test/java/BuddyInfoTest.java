@@ -24,14 +24,14 @@ public class BuddyInfoTest {
     @org.junit.Test
     public void getBuddyName() {
         b = new BuddyInfo("Sam", 123456);
-        assertEquals("The Buddy's name is Sam" , "Sam", b.getBuddyName());
+        assertEquals("The Buddy's name is Sam" , "Sam", b.getName());
     }
 
     @org.junit.Test
     public void setBuddyName() {
         b = new BuddyInfo("Sam", 123456);
-        b.setBuddyName("Robert");
-        assertEquals("The Buddy's name is Robert" , "Robert", b.getBuddyName());
+        b.setName("Robert");
+        assertEquals("The Buddy's name is Robert" , "Robert", b.getName());
 
     }
 }

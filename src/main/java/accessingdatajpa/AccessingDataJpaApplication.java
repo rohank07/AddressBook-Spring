@@ -41,7 +41,7 @@ public class AccessingDataJpaApplication{
 
             log.info("Buddy found with findbyName Matt");
             log.info("--------------------------------");
-            repository.findByBuddyName("Matt").forEach(Matt -> {
+            repository.findByName("Matt").forEach(Matt -> {
                 log.info(Matt.toString());
 
 

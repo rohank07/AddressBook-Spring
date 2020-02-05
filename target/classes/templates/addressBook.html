@@ -6,14 +6,21 @@
 </head>
 <body>
 
-<h1>Results</h1>
+<h1>Addressbook</h1>
 
-<!--<p th: each="BuddyInfo:  ${addressBook.getBuddyInfos()} " />-->
-<!--<p th:text = "'AddressBook ID'  + ${BuddyInfo.id}"></p>-->
-<!--<p th:text = "'BuddyInfo'  + ${(BuddyInfo.name)}"></p>-->
+<table>
+    <tr>
+        <th>NAME </th>
+        <th>Phone Number</th>
+    </tr>
+    <tr th:each="buddy : ${addressBook.buddyInfos}">
+        <td th:text="${buddy.name}"></td>
+        <td th:text="${buddy.phoneNum}"></td>
+    </tr>
+</table>
 
-<p th:text = "'AddressBook ID'  + ${addressBook.id}"></p>
-<p th:text = "'BuddyInfo'  + ${addressBook.ToString()}"></p>
+<!--<p th:text = "'AddressBook ID'  + ${addressBook.id}"></p>-->
+<!--<p th:text = "'BuddyInfo'  + ${addressBook.ToString()}"></p>-->
 
 
 </body>

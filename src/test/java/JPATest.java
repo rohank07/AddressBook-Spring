@@ -11,15 +11,15 @@ public class JPATest {
 
     public void performJPA(){
         BuddyInfo buddy1 = new BuddyInfo();
-        buddy1.setBuddyName("Jacob");
+        buddy1.setName("Jacob");
         buddy1.setPhoneNum(6476778);
 
         BuddyInfo buddy2 = new BuddyInfo();
-        buddy2.setBuddyName("Mathew");
+        buddy2.setName("Mathew");
         buddy2.setPhoneNum(678655);
 
         BuddyInfo buddy3 = new BuddyInfo();
-        buddy3.setBuddyName("Robin");
+        buddy3.setName("Robin");
         buddy3.setPhoneNum(445432);
 
         AddressBook addressBook = new AddressBook();
@@ -48,7 +48,7 @@ public class JPATest {
         List<BuddyInfo> results = q.getResultList();
 
         for (BuddyInfo b:  results){
-            System.out.println(b.getBuddyName() + "(id= " + b.getId() + ")");
+            System.out.println(b.getName() + "(id= " + b.getId() + ")");
         }
         for (AddressBook a : addressBookQueryResultList){
             System.out.println("(id= " + a.getId() + ")");

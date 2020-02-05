@@ -7,14 +7,14 @@ public class BuddyInfo {
     @ManyToOne
     private AddressBook addressBook;
     private int phoneNum;
-    private String buddyName;
+    private String name;
     @Id
     @GeneratedValue
     private Integer id;
 
-    public BuddyInfo(String buddyName, int phoneNum){
+    public BuddyInfo(String name, int phoneNum){
         this.phoneNum = phoneNum;
-        this.buddyName = buddyName;
+        this.name = name;
     }
     public BuddyInfo(){
 
@@ -33,12 +33,12 @@ public class BuddyInfo {
         this.phoneNum = phoneNum;
     }
 
-    public String getBuddyName() {
-        return buddyName;
+    public String getName() {
+        return name;
     }
 
-    public void setBuddyName(String buddyName) {
-        this.buddyName = buddyName;
+    public void setName(String name) {
+        this.name = name;
     }
 
 

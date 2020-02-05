@@ -49,14 +49,12 @@ public class AddressBook {
     public String ToString(){
         String s = "";
         for (BuddyInfo b: buddyInfos){
-            s += " Name: " + b.getBuddyName() + " Phone Number: " + b.getPhoneNum() + " \n";
+            s += " Name: " + b.getName() + " Phone Number: " + b.getPhoneNum() + " \n";
         }
         return s;
     }
-    public void removeBuddy (int index){
-        if (index >= 0 && index < buddySize()){
-            buddyInfos.remove(index);
-        }
+    public void removeBuddy (Integer index){
+        this.buddyInfos.removeIf(n-> (n.getId() == index));
     }
 
 

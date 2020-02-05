@@ -7,7 +7,7 @@ import java.util.List;
 
     public interface BuddyRepository extends CrudRepository<BuddyInfo, Integer> {
 
-        List<BuddyInfo> findByBuddyName(String name);
+        List<BuddyInfo> findByName(String name);
         BuddyInfo findById (int id);
 
 
