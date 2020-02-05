@@ -1,1 +1,7 @@
 language: java
+
+deploy:
+  provider: heroku
+  api-key:
+    secure: ca7d7acf-e37b-498a-8b54-4cc779f75bf6
+  app: addressbook-spring
